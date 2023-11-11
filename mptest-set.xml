@@ -18,20 +18,4 @@
 
 	</sim>
 
-	<!-- values in key n="xx" are ASCII decimal values -->
-	<input>
-		<keyboard>
-			<key n="115">
-				<name>s</name>
-				<desc>switch toggle (for all lights)</desc>
-				<binding>
-					<command>property-toggle</command>
-					<property>controls/lighting/lights-on-bool</property>
-				</binding>
-			</key>
-		</keyboard>
-	</input>
-
-	<nasal>
-	</nasal>
 </PropertyList>

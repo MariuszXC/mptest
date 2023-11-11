@@ -43,8 +43,6 @@
 		<sound>
 			<path></path>
 		</sound>
-
-
 	</sim>
 
 	<controls>
@@ -77,7 +75,32 @@
 	</fdm>
 
 	<nasal>
-		<mptest>Nasal/mptest.nas</mptest>
+		<mptest>
+			<file>Nasal/mptest.nas</file>
+		</mptest>
 	</nasal>
+
+	<!-- values in key n="xx" are ASCII decimal values -->
+	<input>
+		<keyboard>
+			<key n="115">
+				<name>s</name>
+				<desc>switch toggle (for all lights)</desc>
+				<binding>
+					<command>property-toggle</command>
+					<property>controls/lighting/lights-on-bool</property>
+				</binding>
+			</key>
+		</keyboard>
+
+		<key n="8">
+			<name>Backspace</name>
+			<desc>Nasal - dump aircraft pos</desc>
+			<binding>
+				<command>nasal</command>
+				<script>mptest.dump_acpos();</script>
+			</binding>
+		</key>
+	</input>
 
 </PropertyList>
