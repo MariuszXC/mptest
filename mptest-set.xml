@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="mptest-base.xml">
+
+	<sim>
+		<description>MP test carrier for lights</description>
+
+		<long-description>
+		</long-description>
+
+		<primary-set type="bool">true</primary-set>
+
+		<systems>
+		</systems>
+
+		<aircraft-data>
+		</aircraft-data>
+
+	</sim>
+
+	<!-- values in key n="xx" are ASCII decimal values -->
+	<input>
+		<keyboard>
+			<key n="115">
+				<name>s</name>
+				<desc>switch toggle (for all lights)</desc>
+				<binding>
+					<command>property-toggle</command>
+					<property>controls/lighting/lights-on-bool</property>
+				</binding>
+			</key>
+		</keyboard>
+	</input>
+
+	<nasal>
+	</nasal>
+</PropertyList>

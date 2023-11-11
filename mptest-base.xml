@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+	<aircraft>
+	</aircraft>
+
+
+	<sim include="mptest-views.xml">
+
+
+		<minimum-fg-version>2018.3.0</minimum-fg-version>
+		<!-- Compositor is available since 2020.4 https://wiki.flightgear.org/Compositor -->
+
+		<flight-model>null</flight-model>
+		<status>Alpha</status>
+
+		<!-- see: https://wiki.flightgear.org/Splash_screen -->
+		<!--previews>
+			<preview>
+				<type>exterior</type>
+				<splash type="bool">true</splash>
+				<path>Splash/exterior1.jpg</path>
+			</preview>
+		</previews-->
+
+		<model>
+			<path archive="y">Aircraft/mptest/Models/mptest.xml</path> <!-- needs to be a long path for MP, see wiki -->
+			<rendering>
+				<rain-enabled type="int">2</rain-enabled>
+				<reflection-enabled type="int">1</reflection-enabled>
+				<reflection-type type="int">1</reflection-type>
+				<reflection-dynamic type="int">1</reflection-dynamic>
+				<reflection-correction type="float">-0.6</reflection-correction>
+				<reflection-fresnel type="float">0.0</reflection-fresnel>
+				<reflection-fresnel-factor type="float">0.7</reflection-fresnel-factor>
+				<reflection-rainbow type="float">0.0</reflection-rainbow>
+				<reflection-noise type="float">0.00</reflection-noise>
+				<ambient-correction type="float">0.15</ambient-correction>
+			</rendering>
+		</model>
+
+		<sound>
+			<path></path>
+		</sound>
+
+
+	</sim>
+
+	<controls>
+		<electric>
+			<battery-switch>1</battery-switch>
+		</electric>
+		<lighting>
+			<lights-on-norm type="float">1.0</lights-on-norm>
+			<lights-on-bool type="bool">1</lights-on-bool>
+			<lights-on-24V type="float">24.0</lights-on-24V>
+		</lighting>
+	</controls>
+
+
+	<instrumentation>
+	</instrumentation>
+
+
+	<systems>
+		<electrical>
+			<path/>
+		</electrical>
+		<outputs>
+			<landing-lights type="double">24.0</landing-lights>
+			<strobe-lights type="double">24.0</strobe-lights>
+		</outputs>
+	</systems>
+
+	<fdm>
+	</fdm>
+
+	<nasal>
+	</nasal>
+
+</PropertyList>

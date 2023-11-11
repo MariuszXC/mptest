@@ -1,0 +1,54 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+
+<PropertyList>
+
+	<chase-distance-m type="double" archive="y"> -15 </chase-distance-m>
+
+	<view n="0">
+		<internal archive="y">true</internal>
+		<config>
+			<x-offset-m archive="y"> -0.25429 </x-offset-m> <!-- Right -->
+			<y-offset-m archive="y">  0.63000 </y-offset-m> <!-- Up -->
+			<z-offset-m archive="y"> -1.64564 </z-offset-m> <!-- Back -->
+			<pitch-offset-deg> -8 </pitch-offset-deg>
+			<default-field-of-view-deg> 73.3 </default-field-of-view-deg>
+		</config>
+	</view>
+
+	<view n="1">
+		<config>
+			<target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+		</config>
+	</view>
+
+	<view n="2">
+		<config>
+			<target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+		</config>
+	</view>
+
+	<view n="3">
+		<config>
+			<target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+		</config>
+	</view>
+
+	<view n="4">
+		<config>
+			<target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+		</config>
+	</view>
+
+	<view n="5">
+		<config>
+			<target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+		</config>
+	</view>
+
+	<view n="6">
+		<config>
+			<target-z-offset-m archive="y" type="double"> 0 </target-z-offset-m>
+		</config>
+	</view>
+
+</PropertyList>
