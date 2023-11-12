@@ -1,4 +1,6 @@
-# TBD
+# Place self model at increasing dustances to test visibility ranges
+
+# Written 2023 by Mariusz Matuszek (MariuszXC)
 
 # get coordinates of a local model
 # calculate positions 2,4,6,8,10,12 km (nm?) ahead, at a sight rising slope, and with headng turned by ~180 degrees
