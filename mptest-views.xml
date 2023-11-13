@@ -8,7 +8,7 @@
 		<internal archive="y">true</internal>
 		<config>
 			<x-offset-m archive="y"> -0.25429 </x-offset-m> <!-- Right -->
-			<y-offset-m archive="y">  0.63000 </y-offset-m> <!-- Up -->
+			<y-offset-m archive="y">  2.03000 </y-offset-m> <!-- Up -->
 			<z-offset-m archive="y"> -1.64564 </z-offset-m> <!-- Back -->
 			<pitch-offset-deg> -8 </pitch-offset-deg>
 			<default-field-of-view-deg> 73.3 </default-field-of-view-deg>
