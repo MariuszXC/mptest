@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <name>mptest-about-dialog</name>
+    <width>200</width>
+    <height>150</height>
+    <modal>false</modal>
+    <draggable>true</draggable>
+    <resizable>false</resizable>
+</PropertyList>

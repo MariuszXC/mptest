@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+	<key>
+		<name>Backspace</name>
+		<desc>spawn more models at increasing distances and altitudes</desc>
+	</key>
+	<key>
+		<name>s</name>
+		<desc>toggle between strobes and all other lights (nav+landing+taxi)</desc>
+	</key>
+	<text>
+    === General Description ===
+
+	This is a heavily stripped-down model. It has no FDM, does not fly, etc.
+	Its main purpose is to help in testing long range visibility of aircraft lights.
+	
+	Each press of a 'Backspace' key will place in view a set of three copies of this model.
+	These copies are arranged in an arc, and placed in front of the viewer.
+	Models placed on center line of view are placed turned directly towards the viewer, with a slight nose down attitude.
+	Models placed to the sides of line of view have an additional twist and roll applied.
+
+	The distance between viewer and sets increments with each new placed set and is equal to the multiple of
+	/mptest/dst-offset-m and /mptest/counter property values.
+
+	The altitude difference of each new set is calculated as (/mptest/counter)^2 * /mptest/alt-offset-m 
+
+	Finally, the angle between center and side lines of view is controlled by /mptest/hdg-offset-deg
+
+	To keep the impact of the model as low as possible, strobe lights are not animated. This may change if it turns to be useful.
+	</text>
+</PropertyList>

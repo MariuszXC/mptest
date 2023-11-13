@@ -24,6 +24,8 @@
 			</preview>
 		</previews-->
 
+		<help include="gui/dialogs/mptest-help.xml"/>
+
 		<model>
 			<path archive="y">Aircraft/mptest/Models/mptest.xml</path> <!-- needs to be a long path for MP, see wiki -->
 			<rendering>
