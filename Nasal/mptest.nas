@@ -23,12 +23,12 @@ var debug = 0 ;
 
 
 # implemented logic:
-# - get invocation counter C
+# - get invocation counter C,
 # - get distance delta D,
 # - get altitude delta A,
 # - get hdg offset O,
+# - get current ac position P, elevation E and heading H,
 # - with each invocation calculate distance delta D' = D * C
-# - get current ac position P, elevation E and heading H
 
 # - calculate target positions P'l, P'c, P'r:
 #   - P'l = (new coord at distance D', heading H - O, elevation E + C*A)
@@ -36,7 +36,7 @@ var debug = 0 ;
 #   - P'r = (new coord at distance D', heading H + O, elevation E + C*A)
 
 # - place 3 models at coordinates P'l, P'c, P'r with heading set to (H+160, H+180, H+200) respectively
-# - attitude slightly nose down
+# - attitude slightly nose down, slight roll on l and r
 
 
 
@@ -70,13 +70,13 @@ var place_models = func () {
     var r_model_position        = geo.Coord.new(my_position) ;
 
     l_model_position.apply_course_distance(my_heading - hdg_offset, invocation_counter * dst_offset) ;
-    l_model_position.set_alt(my_alt + 1 * invocation_counter * alt_offset) ;
+    l_model_position.set_alt(my_alt + invocation_counter * invocation_counter * alt_offset) ;
 
     c_model_position.apply_course_distance(my_heading, invocation_counter * dst_offset) ;
-    c_model_position.set_alt(my_alt + (invocation_counter * invocation_counter) * alt_offset) ;
+    c_model_position.set_alt(my_alt + invocation_counter * invocation_counter * alt_offset) ;
 
     r_model_position.apply_course_distance(my_heading + hdg_offset, invocation_counter * dst_offset) ;
-    r_model_position.set_alt(my_alt + 3 *invocation_counter * alt_offset) ;
+    r_model_position.set_alt(my_alt + invocation_counter * invocation_counter * alt_offset) ;
 
     if (debug) {
         print(my_model) ;
@@ -86,9 +86,10 @@ var place_models = func () {
         r_model_position.dump() ;
     }
 
-    geo.put_model(my_model, l_model_position, my_heading+160, -2) ;
-    geo.put_model(my_model, c_model_position, my_heading+180, -2) ;
-    geo.put_model(my_model, r_model_position, my_heading+200, -2) ;
+    # arr some yaw and roll and place models in the scene
+    geo.put_model(my_model, l_model_position, my_heading+160, -2,  5 * invocation_counter) ;
+    geo.put_model(my_model, c_model_position, my_heading+180, -2, 0) ;
+    geo.put_model(my_model, r_model_position, my_heading+200, -2, -5 * invocation_counter) ;
 
     counter_ref.setIntValue(invocation_counter + 1) ;       # lastly increment invocation counter
 };

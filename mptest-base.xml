@@ -103,9 +103,9 @@
 	</input>
 
 	<mptest>
-		<hdg-offset-deg type="int">  20</hdg-offset-deg>
-		<alt-offset-m   type="int">  20</alt-offset-m>
-		<dst-offset-m   type="int"> 100</dst-offset-m>
+		<hdg-offset-deg type="int">   7</hdg-offset-deg>
+		<alt-offset-m   type="int">  10</alt-offset-m>
+		<dst-offset-m   type="int">1000</dst-offset-m>
 		<counter        type="int">   1</counter>
 	</mptest>
 
