@@ -16,15 +16,15 @@
 	-->
 
 	<!-- Landing Light -->
-	<!--model>
+	<model>
 		<name>ll_std</name>
-		<path>./Lights/lights/LandingLight.xml</path>
+		<path>./Lights/std_lights/LandingLight.xml</path>
 		<offsets>
 			<x-m> -1.82488  </x-m>
 			<y-m> -4.89362  </y-m>
 			<z-m>  1.809111 </z-m>
 		</offsets>
-	</model-->
+	</model>
 
 	<model>
 		<name>ll_als</name>
@@ -82,7 +82,7 @@
 
 	<animation>
 		<type>select</type>
-		<!--object-name>ll_std</object-name-->
+		<object-name>ll_std</object-name>
 		<object-name>ll_als</object-name>
 		<object-name>landinglight</object-name>
 		<condition>
@@ -91,15 +91,15 @@
 	</animation>
 
 	<!-- Taxi Light -->
-	<!--model>
+	<model>
 		<name>tl_std</name>
-		<path>./Lights/lights/TaxiLight.xml</path>
+		<path>./Lights/std_lights/TaxiLight.xml</path>
 		<offsets>
 			<x-m> -1.8158   </x-m>
 			<y-m> -5.0502   </y-m>
 			<z-m>  1.819111 </z-m>
 		</offsets>
-	</model-->
+	</model>
 
 	<model>
 		<name>tl_als</name>
@@ -157,7 +157,7 @@
 
 	<animation>
 		<type>select</type>
-		<!--object-name>tl_std</object-name-->
+		<object-name>tl_std</object-name>
 		<object-name>tl_als</object-name>
 		<object-name>taxilight</object-name>
 		<condition>
@@ -167,15 +167,15 @@
 
 
 	<!-- Navigation Lights - red -->
-	<!--model>
+	<model>
 		<name>rednav_std</name>
-		<path>./Lights/lights/RedLight.xml</path>
+		<path>./Lights/std_lights/RedLight.xml</path>
 		<offsets>
 			<x-m> -1.02251 </x-m>
 			<y-m> -5.75    </y-m>
 			<z-m>  1.9     </z-m>
 		</offsets>
-	</model-->
+	</model>
 
 	<model>
 		<name>rednav_als</name>
@@ -233,15 +233,15 @@
 
 
 	<!-- Navigation Lights - green -->
-	<!--model>
+	<model>
 		<name>greennav_std</name>
-		<path>./Lights/lights/GreenLight.xml</path>
+		<path>./Lights/std_lights/GreenLight.xml</path>
 		<offsets>
 			<x-m> -1.02251 </x-m>
 			<y-m>  5.75 </y-m>
 			<z-m>  1.9 </z-m>
 		</offsets>
-	</model-->
+	</model>
 
 	<model>
 		<name>greennav_als</name>
@@ -299,15 +299,15 @@
 
 
 	<!-- Navigation Lights - left rear white -->
-	<!--model>
+	<model>
 		<name>leftrearnav_std</name>
-		<path>./Lights/lights/WhiteLight.xml</path>
+		<path>./Lights/std_lights/WhiteLight.xml</path>
 		<offsets>
 			<x-m> -0.97 </x-m>
 			<y-m> -5.75 </y-m>
 			<z-m>  1.9 </z-m>
 		</offsets>
-	</model-->
+	</model>
 
 	<model>
 		<name>leftrearnav_als</name>
@@ -365,15 +365,15 @@
 
 
 	<!-- Navigation Lights - right rear white -->
-	<!--model>
+	<model>
 		<name>rightrearnav_std</name>
-		<path>./Lights/lights/WhiteLight.xml</path>
+		<path>./Lights/std_lights/WhiteLight.xml</path>
 		<offsets>
 			<x-m> -0.97 </x-m>
 			<y-m>  5.75 </y-m>
 			<z-m>  1.9  </z-m>
 		</offsets>
-	</model-->
+	</model>
 
 	<model>
 		<name>rightrearnav_als</name>
@@ -431,16 +431,16 @@
 
 	<animation>
 		<type>select</type>
-		<!--object-name>rednav_std</object-name-->
+		<object-name>rednav_std</object-name>
 		<object-name>rednav_als</object-name>
 		<object-name>red-navlight</object-name>
-		<!--object-name>greennav_std</object-name-->
+		<object-name>greennav_std</object-name>
 		<object-name>greennav_als</object-name>
 		<object-name>green-navlight</object-name>
-		<!--object-name>leftrearnav_std</object-name-->
+		<object-name>leftrearnav_std</object-name>
 		<object-name>leftrearnav_als</object-name>
 		<object-name>left-rear-navlight</object-name>
-		<!--object-name>rightrearnav_std</object-name-->
+		<object-name>rightrearnav_std</object-name>
 		<object-name>rightrearnav_als</object-name>
 		<object-name>right-rear-navlight</object-name>
 		<condition>
@@ -449,15 +449,15 @@
 	</animation>
 
 	<!-- Strobe Light - left -->
-	<!--model>
+	<model>
 		<name>leftstrobe_std</name>
-		<path>./Lights/lights/StrobeLight.xml</path>
+		<path>./Lights/std_lights/StrobeLight.xml</path>
 		<offsets>
 			<x-m> -1.00 </x-m>
 			<y-m> -5.75 </y-m>
 			<z-m>  1.9  </z-m>
 		</offsets>
-	</model-->
+	</model>
 
 	<model>
 		<name>leftstrobe_als</name>
@@ -515,15 +515,15 @@
 
 
 	<!-- Strobe Light - right -->
-	<!--model>
+	<model>
 		<name>rightstrobe_std</name>
-		<path>./Lights/lights/StrobeLight.xml</path>
+		<path>./Lights/std_lights/StrobeLight.xml</path>
 		<offsets>
 			<x-m> -1.00077 </x-m>
 			<y-m>  5.75 </y-m>
 			<z-m>  1.9 </z-m>
 		</offsets>
-	</model-->
+	</model>
 
 	<model>
 		<name>rightstrobe_als</name>
@@ -589,13 +589,13 @@
 		<object-name>right-strobe</object-name>
 		<condition>
 			<not>
-			<property>controls/lighting/lights-on-bool</property>
+				<property>controls/lighting/lights-on-bool</property>
 			</not>
 		</condition>
 	</animation>
 
 	<!-- Animations -->
-	<!-- Select Lights ALS/Standard -->
+	<!-- Select ALS_Lights / STD_Lights -->
 	<animation>
 		<type>select</type>
 		<object-name>ll_als</object-name>
@@ -612,7 +612,7 @@
 		</condition>
 	</animation>
 
-	<!--animation>
+	<animation>
 		<type>select</type>
 		<object-name>ll_std</object-name>
 		<object-name>tl_std</object-name>
@@ -628,7 +628,7 @@
 				<property>/sim/rendering/shaders/skydome</property>
 			</not>
 		</condition>
-	</animation-->
+	</animation>
 
 	<!-- Noshadow Animation -->
 	<animation>
@@ -641,14 +641,14 @@
 		<object-name>rightrearnav_als</object-name>
 		<object-name>leftstrobe_als</object-name>
 		<object-name>rightstrobe_als</object-name>
-		<!--object-name>ll_std</object-name>
+		<object-name>ll_std</object-name>
 		<object-name>tl_std</object-name>
 		<object-name>rednav_std</object-name>
 		<object-name>greennav_std</object-name>
 		<object-name>leftrearnav_std</object-name>
 		<object-name>rightrearnav_std</object-name>
 		<object-name>leftstrobe_std</object-name>
-		<object-name>rightstrobe_std</object-name-->
+		<object-name>rightstrobe_std</object-name>
 	</animation>
 
 </PropertyList>
