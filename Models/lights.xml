@@ -8,12 +8,16 @@
 	Strobe			2	wing tips
 	Landing			1	left wing leading edge, inward
 	Taxi			1	left wing leading edge, outward
+
+
+	the 'als' light definitions seem to be directly compatible with compositor
+	Source:  https://wiki.flightgear.org/Compositor
+
+	Compositor lights syntax is documented here: https://wiki.flightgear.org/Compositor#Lights
+
+	HDR pipeline lights are described here: https://wiki.flightgear.org/HDR_Pipeline#Lights
 	-->
 
-	<!--
-		the 'als' light definitions seem to be directly compatible with compositor
-		Source:  https://wiki.flightgear.org/Compositor
-	-->
 
 	<!-- Landing Light -->
 	<model>
