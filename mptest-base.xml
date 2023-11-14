@@ -16,13 +16,18 @@
 		<status>Alpha</status>
 
 		<!-- see: https://wiki.flightgear.org/Splash_screen -->
-		<!--previews>
+		<previews>
 			<preview>
 				<type>exterior</type>
 				<splash type="bool">true</splash>
-				<path>Splash/exterior1.jpg</path>
+				<path>Splash/splash1.jpg</path>
 			</preview>
-		</previews-->
+			<preview>
+				<type>exterior</type>
+				<splash type="bool">true</splash>
+				<path>Splash/splash2.jpg</path>
+			</preview>
+		</previews>
 
 		<help include="gui/dialogs/mptest-help.xml"/>
 
